@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+    color: #3498db;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+/* Seção Produtos */
+.produtos {
+    padding: 4rem 0;
+}
+
+.produtos h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.produto {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.produto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.produto h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.produto p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.btn-adicionar {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-adicionar:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+/* Responsividade - Tablet (641px até 1023px) */
+@media (max-width: 1023px) {
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .sobre-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .sobre-imagem img {
+        max-width: 300px;
+    }
+    
+    .sobre-texto h2 {
+        font-size: 2rem;
+    }
+    
+    .produtos h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Responsividade - Mobile (até 640px) */
+@media (max-width: 640px) {
+    .header .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header nav ul {
+        gap: 1rem;
+    }
+    
+    .sobre {
+        padding: 2rem 0;
+    }
+    
+    .sobre-texto h2 {
+        font-size: 1.8rem;
+    }
+    
+    .sobre-texto p {
+        font-size: 1rem;
+    }
+    
+    .produtos {
+        padding: 2rem 0;
+    }
+    
+    .produtos h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .produtos-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .produto {
+        padding: 1rem;
+    }
+    
+    .produto img {
+        max-width: 150px;
+    }
+    
+    .produto h3 {
+        font-size: 1.2rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+} 
