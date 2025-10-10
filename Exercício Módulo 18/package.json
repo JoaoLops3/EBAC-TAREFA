@@ -1,0 +1,26 @@
+{
+  "name": "exercicio-modulo-18",
+  "version": "1.0.0",
+  "description": "Exercício de Grunt - Compilação LESS e Minificação JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "build": "grunt",
+    "watch": "grunt watch"
+  },
+  "keywords": [
+    "grunt",
+    "less",
+    "javascript",
+    "minification",
+    "automation"
+  ],
+  "author": "EBAC Student",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
+
