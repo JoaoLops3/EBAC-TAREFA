@@ -1,0 +1,122 @@
+@import "variables.less";
+@import "mixins.less";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: @background-color;
+    color: @text-color;
+    line-height: 1.6;
+}
+
+.header {
+    background: linear-gradient(135deg, @primary-color, @secondary-color);
+    color: @white;
+    padding: @spacing-large @spacing-medium;
+    text-align: center;
+    box-shadow: @box-shadow;
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: @spacing-small;
+    }
+
+    p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: @spacing-large auto;
+    padding: 0 @spacing-medium;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: @spacing-medium;
+}
+
+.card {
+    .card-style();
+
+    h2 {
+        color: @primary-color;
+        margin-bottom: @spacing-medium;
+        font-size: 1.5rem;
+    }
+
+    p {
+        margin-bottom: @spacing-medium;
+    }
+
+    ul {
+        list-style-position: inside;
+        
+        li {
+            padding: @spacing-small 0;
+            border-bottom: 1px solid @border-color;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+
+    &.highlight {
+        border: 2px solid @primary-color;
+        background: lighten(@primary-color, 45%);
+    }
+}
+
+button {
+    background-color: @primary-color;
+    color: @white;
+    border: none;
+    padding: @spacing-small @spacing-medium;
+    border-radius: @border-radius;
+    font-size: 1rem;
+    cursor: pointer;
+    .transition(background-color, 0.3s, ease);
+
+    &:hover {
+        background-color: darken(@primary-color, 10%);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
+
+#output {
+    margin-top: @spacing-medium;
+    padding: @spacing-medium;
+    background-color: lighten(@accent-color, 40%);
+    border-radius: @border-radius;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+.footer {
+    background-color: @secondary-color;
+    color: @white;
+    text-align: center;
+    padding: @spacing-medium;
+    margin-top: @spacing-large;
+}
+
+// Responsividade
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+

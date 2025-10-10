@@ -1,0 +1,23 @@
+// Mixins LESS
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transition(@property: all, @duration: 0.3s, @timing: ease) {
+    transition: @property @duration @timing;
+}
+
+.card-style {
+    background: @white;
+    border-radius: @border-radius;
+    padding: @spacing-medium;
+    box-shadow: @box-shadow;
+    .transition(box-shadow, 0.3s, ease);
+
+    &:hover {
+        box-shadow: @box-shadow-hover;
+    }
+}
+
