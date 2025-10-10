@@ -1,0 +1,29 @@
+{
+  "name": "gulp-project",
+  "version": "1.0.0",
+  "description": "Projeto com Gulp para compilação SASS, compressão de imagens e JavaScript",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch",
+    "default": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.69.0"
+  },
+  "keywords": [
+    "gulp",
+    "sass",
+    "imagemin",
+    "uglify"
+  ],
+  "author": "",
+  "license": "MIT"
+}

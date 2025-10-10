@@ -1,0 +1,22 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+section {
+    padding: $section-padding;
+}
+
+.products {
+    margin-top: 40px;
+    @include product-grid;
+}
+
+.product-item {
+    img {
+        width: 100%;
+        border-radius: $border-radius;
+    }
+}
+
+.product-button {
+    @include button-style;
+}

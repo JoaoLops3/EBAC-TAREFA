@@ -1,0 +1,9 @@
+// Importação de variáveis e mixins
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Importação dos módulos
+@use 'base';
+@use 'header';
+@use 'products';
+@use 'responsive';

@@ -1,0 +1,19 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Reset global
+* {
+    @include reset;
+}
+
+body {
+    background-color: $secondary-color;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    @include container;
+}

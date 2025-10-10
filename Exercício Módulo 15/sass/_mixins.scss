@@ -1,0 +1,61 @@
+@use 'variables' as *;
+
+// Mixin para reset global
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+// Mixin para container
+@mixin container {
+    max-width: $container-max-width;
+    width: 100%;
+    margin: 0 auto;
+}
+
+// Mixin para flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// Mixin para botões
+@mixin button-style {
+    display: block;
+    background-color: $accent-color;
+    color: $text-color;
+    text-align: center;
+    padding: $button-padding;
+    border-radius: $button-border-radius;
+    margin-top: $product-margin;
+    text-decoration: none;
+    
+    &:hover {
+        background-color: $accent-hover;
+    }
+}
+
+// Mixin para grid de produtos
+@mixin product-grid($columns: $grid-columns, $gap: $grid-gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, calc((100% - #{$gap} * (#{$columns} - 1)) / #{$columns}));
+    column-gap: $gap;
+    row-gap: $product-gap;
+    width: 100%;
+}
+
+// Mixin para media queries
+@mixin tablet {
+    @media screen and (max-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}

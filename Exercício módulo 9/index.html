@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas - Módulo 9</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        
+        <form id="taskForm">
+            <div class="form-group">
+                <input type="text" id="taskInput" placeholder="Digite uma nova tarefa..." required>
+                <button type="submit" id="addTaskBtn">Adicionar Tarefa</button>
+            </div>
+        </form>
+        
+        <div class="tasks-container">
+            <h2>Minhas Tarefas</h2>
+            <ul id="taskList">
+                <!-- As tarefas serão adicionadas aqui dinamicamente -->
+            </ul>
+        </div>
+        
+        <div class="task-stats">
+            <p>Total de tarefas: <span id="totalTasks">0</span></p>
+            <p>Tarefas concluídas: <span id="completedTasks">0</span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

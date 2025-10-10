@@ -1,0 +1,24 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Media queries para tablet
+@include tablet {
+    .container {
+        max-width: 80%;
+    }
+    
+    .products {
+        @include product-grid($grid-columns-tablet, $grid-gap-tablet);
+    }
+}
+
+// Media queries para mobile
+@include mobile {
+    .products {
+        display: block;
+    }
+    
+    .product-item {
+        margin-bottom: 32px;
+    }
+}

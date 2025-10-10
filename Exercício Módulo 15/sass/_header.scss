@@ -1,0 +1,28 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+header {
+    background-color: $primary-color;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+    .container {
+        @include flex-center;
+        padding: $header-padding;
+    }
+}
+
+.menu {
+    display: flex;
+    
+    li {
+        font-weight: $font-weight-bold;
+        margin-left: 24px;
+        
+        a {
+            color: $text-color;
+            text-decoration: none;
+        }
+    }
+}
