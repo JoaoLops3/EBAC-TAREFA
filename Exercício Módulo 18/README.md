@@ -45,19 +45,22 @@ npm install
 # Executar todas as tarefas (compilar LESS e minificar JS)
 npm run build
 
-# ou
-grunt
+# ou (se tiver Grunt instalado globalmente)
+npx grunt
 
 # Modo watch (desenvolvimento)
-grunt watch
+npm run watch
+
+# ou
+npx grunt watch
 ```
 
 ## Tarefas do Grunt
 
-- `grunt less` - Compila arquivos LESS para CSS
-- `grunt uglify` - Minifica arquivos JavaScript
-- `grunt watch` - Observa mudanças e executa tarefas automaticamente
-- `grunt` (default) - Executa less e uglify
+- `npm run build` ou `npx grunt` - Executa less e uglify
+- `npx grunt less` - Compila arquivos LESS para CSS
+- `npx grunt uglify` - Minifica arquivos JavaScript
+- `npm run watch` ou `npx grunt watch` - Observa mudanças e executa tarefas automaticamente
 
 ## Tecnologias Utilizadas
 
@@ -65,4 +68,3 @@ grunt watch
 - grunt-contrib-less
 - grunt-contrib-uglify
 - grunt-contrib-watch
-
