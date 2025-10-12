@@ -1,0 +1,19 @@
+{
+  "name": "exercicio-modulo-19-bem",
+  "version": "1.0.0",
+  "description": "Exercício de boas práticas CSS com metodologia BEM",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss/main.scss:dist/css/main.css --style compressed"
+  },
+  "keywords": [
+    "BEM",
+    "SASS",
+    "CSS"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

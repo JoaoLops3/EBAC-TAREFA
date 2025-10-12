@@ -1,0 +1,37 @@
+// Bloco: produtos (container)
+.produtos {
+    max-width: $tamanho-container;
+    width: 100%;
+    margin: 56px auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1%;
+}
+
+// Bloco: produto
+.produto {
+    // Elemento: imagem do produto
+    &__imagem {
+        width: 100%;
+        display: block;
+    }
+
+    // Elemento: nome do produto
+    &__nome {
+        font-size: 1.2em;
+        margin: $espacamento-medio 0;
+    }
+
+    // Elemento: descrição do produto
+    &__descricao {
+        color: $cor-texto-secundario;
+    }
+
+    // Modificador: produto em destaque
+    &--destaque {
+        border: 2px solid $cor-destaque;
+        padding: $espacamento-medio;
+        background-color: $cor-fundo-destaque;
+    }
+}
+
