@@ -37,9 +37,10 @@ Este repositório documenta minha jornada de aprendizado em desenvolvimento fron
 
 ### 🚀 Projetos
 
-| Projeto                   | Descrição                | Tecnologias                   |
-| ------------------------- | ------------------------ | ----------------------------- |
-| [Project-3](./Project-3/) | Projeto de Leilão Online | HTML, CSS, JavaScript, Vercel |
+| Projeto                   | Descrição                                                      | Tecnologias                   |
+| ------------------------- | -------------------------------------------------------------- | ----------------------------- |
+| [Project-3](./Project-3/) | Landing page SwapMarket — troca de produtos usados             | HTML, CSS, JavaScript, Vercel |
+| [Project-4](./Project-4/) | Landing page Disney+ — *A Nova Onda do Imperador*              | HTML, CSS, JavaScript         |
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -83,8 +84,10 @@ Cada módulo possui:
 #### Projetos HTML/CSS/JS Simples
 
 ```bash
-# Navegue até o módulo desejado
+# Navegue até o módulo ou projeto desejado
 cd "Exercício Módulo X"
+# ou
+cd Project-4
 
 # Abra o index.html no navegador ou use um servidor local
 python3 -m http.server 8000
@@ -140,6 +143,7 @@ Fundamentos JavaScript → DOM Manipulation → jQuery → Bootstrap
 
 - ✅ Layouts Responsivos
 - ✅ Flexbox e Grid
+- ✅ Landing pages com identidade visual de marca
 - ✅ Variáveis e Mixins (SASS/LESS)
 - ✅ Metodologia BEM
 - ✅ Boas práticas de organização CSS
@@ -168,7 +172,8 @@ EBAC/
 ├── Exercício Módulo 16/         # Gulp Automatização
 ├── Exercício Módulo 18/         # Grunt Automatização
 ├── Exercício Módulo 19/         # BEM + SASS
-├── Project-3/                   # Projeto Leilão
+├── Project-3/                   # Landing page SwapMarket
+├── Project-4/                   # Landing page Disney+
 ├── .gitignore                   # Arquivos ignorados
 └── README.md                    # Este arquivo
 ```
@@ -177,9 +182,10 @@ EBAC/
 
 ### 🏆 Melhores Projetos
 
-1. **[Módulo 19 - BEM + SASS](./Exercício%20Módulo%2019)** - Implementação completa da metodologia BEM com arquitetura SASS profissional
-2. **[Módulo 18 - Grunt Workflow](./Exercício%20Módulo%2018)** - Pipeline de build automatizado com LESS e minificação
-3. **[Módulo 10 - Formulário jQuery](./Exercício%20Módulo%2010)** - Integração de múltiplos plugins (Carousel, Validação, Máscaras)
+1. **[Project-4 - Landing page Disney+](./Project-4/)** - Réplica fiel da página de título do Disney+, com fontes Avenir, carrosséis e layout responsivo
+2. **[Módulo 19 - BEM + SASS](./Exercício%20Módulo%2019)** - Implementação completa da metodologia BEM com arquitetura SASS profissional
+3. **[Módulo 18 - Grunt Workflow](./Exercício%20Módulo%2018)** - Pipeline de build automatizado com LESS e minificação
+4. **[Módulo 10 - Formulário jQuery](./Exercício%20Módulo%2010)** - Integração de múltiplos plugins (Carousel, Validação, Máscaras)
 
 ## 📝 Notas de Desenvolvimento
 
@@ -222,6 +228,6 @@ Este repositório contém exercícios educacionais desenvolvidos como parte do c
   
 **Desenvolvido com 💙 durante o curso EBAC**
 
-_Última atualização: Outubro 2025_
+_Última atualização: Julho 2026_
 
 </div>
